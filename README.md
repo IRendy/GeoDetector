@@ -16,7 +16,7 @@ from py_geodetector import load_example_data, GeoDetector
 # load example data
 df = load_example_data()
 
-gd = GeoDetector(df)
+gd = GeoDetector(df, 'incidence', ['type', 'region', 'level'])
 # factor detect
 factor_df = gd.factor_dector()
 
